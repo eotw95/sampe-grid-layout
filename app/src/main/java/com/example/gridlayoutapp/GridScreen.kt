@@ -13,12 +13,7 @@ fun GridScreen() {
         columns = GridCells.Adaptive(minSize = 194.dp)
     ) {
         items(30) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                ImageView()
-                TextView(text = "dummy text")
-            }
+            GridItem()
         }
     }
 }
