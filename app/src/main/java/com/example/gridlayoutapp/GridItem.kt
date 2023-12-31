@@ -10,7 +10,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun GridItem() {
+fun GridItem(text: String) {
     Column(
         modifier = Modifier
             .padding(10.dp)
@@ -18,6 +18,6 @@ fun GridItem() {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         ImageView()
-        TextView(text = "dummy text")
+        TextView(text)
     }
 }
